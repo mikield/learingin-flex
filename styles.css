@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.text-yelow {
+    color: #f7ac53;
+}
+
+/** START **/
+.start {
+    height: 100%;
+    background: url(img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.start .container {
+    height: 100vh;
+    margin: 0 20vw;
+}
+
+.start .container .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start .container .header h1 {
+    font-family: "Merriweather", serif;
+    font-size: 60px;
+    color: white;
+    font-weight: 300;
+    padding: 50px;
+    line-height: 95px;
+    border: 1px solid #8f8f8f;
+    max-width: 750px;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.start .container .header .services {
+    margin-top: 40px;
+}
+
+.start .container .header .services li {
+    display: inline;
+    list-style: none;
+    font-family: "Open Sans", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 12pt;
+    text-transform: uppercase;
+}
+
+.start .container .services li:not(:last-child)::after {
+    content: '';
+    width: 2px;
+    height: 12px;
+    background-color: #f7ac53;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.start .container .header i {
+    font-size: 25px;
+    margin-top: 15vh;
+}
+
+.start .container .header i::after {
+    content: "⌵";
+    color: #f7ac53;
+}
+
+.start .container .header i:hover::after {
+    margin-top: 15vh;
+    color: white;
+    cursor: pointer;
+}
+
+.start .container .footer {
+    display: flex;
+    margin-top: 15vh;
+    justify-content: space-between;
+    transition: all 1s;
+    align-items: baseline;
+}
+
+.start .container .footer .logo {
+    font-family: "Open Sans", serif;
+    border: 2px solid #f7ac53;
+    color: #f7ac53;
+    padding: 10px 18px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.start .container .footer a {
+    text-transform: uppercase;
+    font-family: "Open Sans", serif;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.start .container .footer a::after {
+    content: '→';
+    margin-left: 10px;
+    color: #f7ac53;
+}
+
+.start .container .footer a:hover {
+   color: #f7ac53;
+}
+
+.start .container .footer a:hover::after {
+    color: white;
+    margin: 12px;
+}
+
+/** START MEDIA **/
+
+@media only screen and (max-width: 770px) {
+    .start .container {
+        margin: auto 10vw;
+    }
+    .start .container .header h1 {
+        line-height: 1.2;
+        padding: 30px;
+    }
+
+    .start .container .footer {
+        margin-top: 20vh;
+    }
+
+}
+
+
+@media only screen and (max-width: 420px){
+    .start .container .header h1 {
+        font-size: 30px;
+    }
+    
+    .start .container .header .services li {
+        font-size: 10pt;
+    }
+
+    .start .container .footer .logo {
+        padding: 5px 13px;
+    }
+
+    .start .container .footer a {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (height: 812px){
+   
+    .start .container .header h1 {
+        margin-top: 20vh;
+    }
+
+    .start .container .footer {
+        margin-top: 20vh!important;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+   
+    .start .container .header h1 {
+        margin-top: 15vh;
+    }
+
+    .start .container .footer {
+        margin-top: 15vh;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+   
+    .start .container .header h1 {
+        margin-top: 10vh;
+    }
+
+    .start .container .header i {
+        margin-top: 10vh;
+    }
+
+}
