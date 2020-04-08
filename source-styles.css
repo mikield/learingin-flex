@@ -1,0 +1,75 @@
+
+/** START MEDIA **/
+
+@media only screen and (max-width: 770px) {
+    .start .container {
+        margin: auto 10vw;
+    }
+    .start .container .header h1 {
+        line-height: 1.2;
+        padding: 30px;
+    }
+
+    .start .container .footer {
+        margin-top: 20vh;
+    }
+
+}
+
+
+@media only screen and (max-width: 420px){
+    .start .container .header h1 {
+        font-size: 30px;
+    }
+    
+    .start .container .header .services li {
+        font-size: 10pt;
+    }
+
+    .start .container .footer .logo {
+        padding: 5px 13px;
+    }
+
+    .start .container .footer a {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (height: 812px){
+   
+    .start .container .header h1 {
+        margin-top: 20vh;
+    }
+
+    .start .container .footer {
+        margin-top: 20vh!important;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+   
+    .start .container .header h1 {
+        margin-top: 15vh;
+    }
+
+    .start .container .footer {
+        margin-top: 15vh;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+   
+    .start .container .header h1 {
+        margin-top: 10vh;
+    }
+
+    .start .container .header i {
+        margin-top: 10vh;
+    }
+
+}
+
+

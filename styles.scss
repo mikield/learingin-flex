@@ -1,0 +1,202 @@
+$main-color: #f7ac53;
+
+$main-font-family: "Merriweather", serif;
+$secondary-font-family: "Open Sans", serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+.text--yellow {
+    color: $main-color;
+}
+
+
+a.nav-link {
+    text-transform: uppercase;
+    font-family: $secondary-font-family;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: 600;
+
+    &:hover {
+        color: $main-color;
+    }
+
+    &:hover::after {
+        color: white;
+        margin: 12px;
+    }
+
+    &::after {
+        content: "→";
+        margin-left: 10px;
+        color: $main-color;
+    }
+}
+
+/* Start Section */
+.start {
+    height: 100%;
+    background: url(img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+
+    &__container {
+        height: 100vh;
+        margin: 0 20vw;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            font-family: $main-font-family;
+            font-size: 60px;
+            font-weight: 300;
+            padding: 50px;
+            line-height: 95px;
+            border: 1px solid #8f8f8f;
+            max-width: 750px;
+            text-align: center;
+            margin-top: 10vh;
+        }
+
+        i {
+            font-size: 25px;
+            margin-top: 10vh;
+
+            &:hover::after {
+                margin-top: 15vh;
+                color: white;
+                cursor: pointer;
+            }
+
+            &::after {
+                content: "⌵";
+                color: $main-color;
+            }
+        }
+    }
+
+    &__services {
+        margin-top: 40px;
+
+        li {
+            display: inline;
+            list-style: none;
+            font-family: $secondary-font-family;
+            font-weight: 400;
+            font-size: 12pt;
+            text-transform: uppercase;
+
+            &:not(:last-child)::after {
+                content: "";
+                width: 2px;
+                height: 12px;
+                background-color: $main-color;
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        margin-top: 15vh;
+        justify-content: space-between;
+        transition: all 1s;
+        align-items: baseline;
+    }
+
+    &__logo {
+        font-family: $secondary-font-family;
+        border: 2px solid $main-color;
+        color: $main-color;
+        padding: 10px 18px;
+        font-size: 20px;
+        border-radius: 50px;
+    }
+}
+
+/* Services Section */
+
+.services {
+    background-color: #202020;
+
+    &__container {
+        height: 100vh;
+        margin: 0 25vw;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        h3 {
+            color: $main-color;
+            text-transform: uppercase;
+            font-size: 13px;
+
+            &::before {
+                content: "";
+                width: 1px;
+                height: 12vh;
+                background-color: #f7ac53;
+                display: block;
+                margin: 0 auto 10px;
+            }
+        }
+
+        h2 {
+            margin-top: 2.5vh;
+            font-family: $main-font-family;
+            font-size: 40px;
+            width: 40vw;
+        }
+    }
+
+    &__list {
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+
+        .list {
+            &__item {
+                display: flex;
+                flex-direction: column;
+                &__icon {
+                    font-size: 20px;
+                    color: $main-color;
+                }
+
+                &__title {
+                    font-size: 35px;
+                    margin-top: 3vh;
+                }
+
+                &__description {
+                    font-size: 15px;
+                    font-family: $secondary-font-family;
+                    color: #8f8f8f;
+                    width: 12vw;
+                    margin: 2vh 0;
+                }
+
+                &__link {
+                }
+            }
+        }
+    }
+}
