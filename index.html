@@ -13,64 +13,106 @@
 </head>
 
 <body>
-    <section class='start'>
-        <div class="start__container">
-            <div class="start__header">
-                <h1>We’re <span class="text--yellow">Fusion</span>, We Build Things for Human</h1>
-                <ul class="start__services">
-                    <li>Design</li>
-                    <li>Strategy</li>
-                    <li>Banding</li>
-                </ul>
-                <i></i>
+    <section class='start-section'>
+        <div class="container start-section__container">
+            <div class="start-section__header">
+                <h1 class="start-section__title">
+                    We’re
+                    <span class="start-section__title_text-yellow">Fusion</span>,
+                    We Build Things for Human
+                </h1>
             </div>
-            <div class="start__footer">
-                <div class="start__logo">F</div>
+            <ul class="start-section__services-list">
+                <li class="start-section__list-item">Design</li>
+                <li class="start-section__list-item">Strategy</li>
+                <li class="start-section__list-item">Banding</li>
+            </ul>
+            <div class="start-section__footer">
+                <div class="logo">F</div>
+                <i class="start-section__arrow"></i>
                 <a class="nav-link" onclick="javascript:void(0)" href="#">Get in touch</a>
             </div>
         </div>
     </section>
 
-    <section class="services">
-        <div class="services__container">
-            <div class="services__header">
-                <h3>Our services</h3>
-                <h2>Our team will take your business presence to new level</h2>
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-header__title">Our services</h3>
+                <h2 class="section-header__subtitle">Our team will take your business presence to new level</h2>
             </div>
-            <ul class="services__list">
-                <li class="list__item">
-                    <i class="list__item__icon icon_documents_alt"></i>
-                    <span class="list__item__title">Strategy.</span>
-                    <p class="list__item__description">Ship it user story iterate engaging co-working intuitive pitch deck hacker prototype SpaceTeam user centered design big data.</p>
-                    <a onclick="javascript:void(0)" class="list__item__link nav-link" href="#">See details</a>
+            <ul class="services-section__list">
+                <li class="services-section__list-item">
+                    <i class="services-section__list-icon icon_documents_alt"></i>
+                    <span class="services-section__list-title">Strategy.</span>
+                    <p class="services-section__list-description">Ship it user story iterate engaging co-working intuitive pitch
+                        deck hacker prototype SpaceTeam user centered design big data.</p>
+                    <a onclick="javascript:void(0)" class="services-section__list-link nav-link" href="#">See details</a>
                 </li>
-
-                <li class="list__item">
-                    <i class="list__item__icon icon_pencil-edit_alt"></i>
-                    <span class="list__item__title">Branding.</span>
-                    <p class="list__item__description">Ship it user story iterate engaging co-working intuitive pitch deck hacker prototype SpaceTeam user centered design big data.</p>
-                    <a onclick="javascript:void(0)" class="list__item__link nav-link" href="#">See details</a>
+                <li class="services-section__list-item">
+                    <i class="services-section__list-icon icon_pencil-edit_alt"></i>
+                    <span class="services-section__list-title">Branding.</span>
+                    <p class="services-section__list-description">Ship it user story iterate engaging co-working intuitive pitch
+                        deck hacker prototype SpaceTeam user centered design big data.</p>
+                    <a onclick="javascript:void(0)" class="services-section__list-link nav-link" href="#">See details</a>
                 </li>
-
-                <li class="list__item">
-                    <i class="list__item__icon icon_pens"></i>
-                    <span class="list__item__title">Design.</span>
-                    <p class="list__item__description">Ship it user story iterate engaging co-working intuitive pitch deck hacker prototype SpaceTeam user centered design big data.</p>
-                    <a onclick="javascript:void(0)" class="list__item__link nav-link" href="#">See details</a>
+                <li class="services-section__list-item">
+                    <i class="services-section__list-icon icon_pens"></i>
+                    <span class="services-section__list-title">Design.</span>
+                    <p class="services-section__list-description">Ship it user story iterate engaging co-working intuitive pitch
+                        deck hacker prototype SpaceTeam user centered design big data.</p>
+                    <a onclick="javascript:void(0)" class="services-section__list-link nav-link" href="#">See details</a>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section class="projects"></section>
+    <section class="projects-section">
+        <div class="container">
+            <ul class="projects__carousel">
+                <li class="carousel__item">
+                    <div class="carousel__item__header">
+                        <span class="carousel__item__category">Branding & Design</span>
+                        <span class="carousel__item__title">Project One</span>
+                    </div>
+                    <figure class="carousel__item__preview"></figure>
+                    <div class="carousel__item__links">
+                        <a onclick="javascript:void(0)" class="carousel__item__link nav-link" href="#">Project
+                            details</a>
+                        <a onclick="javascript:void(0)" class="carousel__item__link nav-link" href="#">View slides</a>
+                    </div>
+                </li>
+                <ol class="carousel__nav">
+                    <li class="carousel__nav__item"></li>
+                    <li class="carousel__nav__item"></li>
+                    <li class="carousel__nav__item carousel__nav__item--active"></li>
+                    <li class="carousel__nav__item"></li>
+                    <li class="carousel__nav__item"></li>
+                </ol>
+            </ul>
+        </div>
+    </section>
 
-    <section class="tetimonials"></section>
+    <section class="tetimonials-section">
+        <div class="section-header">
+            <h3 class="section-header__title">Testimonials</h3>
+            <h2 class="section-header__subtitle">We have worked with some amazing companies around the world</h2>
+        </div>
+    </section>
 
-    <section class="team"></section>
+    <section class="team-section">
+        <div class="section-header">
+            <h3 class="section-header__title">Out team</h3>
+            <h2 class="section-header__subtitle">Our Amazing Team</h2>
+        </div>
+    </section>
 
-    <section class="contact"></section>
-
-    <footer></footer>
+    <section class="contact-section">
+        <div class="section-header">
+            <h3 class="section-header__title">Contact us</h3>
+            <h2 class="section-header__subtitle">Let’s talk about the project</h2>
+        </div>
+    </section>
 </body>
 
 </html>
